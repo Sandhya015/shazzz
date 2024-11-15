@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Workflow Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Learning Workflow Platform</h1>
+    <nav>
+      <ul>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#assessment">Assessment</a></li>
+        <li><a href="#implement">Implement</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="learn">
+    <h2>Learn</h2>
+    <p>Explore our learning resources to build your knowledge. Access tutorials, articles, and videos on various topics.</p>
+    <button onclick="showResource('learning-resources')">View Resources</button>
+    <div id="learning-resources" style="display:none;">
+      <ul>
+        <li>Topic 1: Introduction to Blockchain</li>
+        <li>Topic 2: Basics of Machine Learning</li>
+        <li>Topic 3: Advanced JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="assessment">
+    <h2>Assessment</h2>
+    <p>Test your knowledge with our assessments and quizzes. Receive instant feedback and tips for improvement.</p>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <div id="quiz" style="display:none;">
+      <p>Question 1: What is blockchain?</p>
+      <input type="radio" name="q1" value="a"> A type of cryptocurrency<br>
+      <input type="radio" name="q1" value="b"> A data structure for secure transactions<br>
+      <input type="radio" name="q1" value="c"> A social media platform<br>
+      <button onclick="submitQuiz()">Submit</button>
+    </div>
+  </section>
+
+  <section id="implement">
+    <h2>Implement</h2>
+    <p>Apply your learning through hands-on projects. Work on real-world tasks and implement what you’ve learned.</p>
+    <button onclick="showProjects()">View Projects</button>
+    <div id="projects" style="display:none;">
+      <ul>
+        <li>Project 1: Build a basic blockchain</li>
+        <li>Project 2: Create a machine learning model</li>
+        <li>Project 3: Develop a web application</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Need help? Access our support resources or connect with mentors.</p>
+    <button onclick="showSupport()">Get Support</button>
+    <div id="support-resources" style="display:none;">
+      <p>Email: support@learningworkflow.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Learning Workflow Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
